@@ -54,13 +54,15 @@ function App() {
     },
   ];
   return (
-    <Tabs tabs={tabs} />
+    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
+      <Tabs tabs={tabs} />
+    </div>
   )
 }
 
 const DummyContent = () => {
   return (
-    <image
+    <img
       src="/linear.webp"
       alt="dummy image"
       width="1000"
